@@ -16,3 +16,8 @@ docker run -p 8000:8000 sample_model
 2. http://0.0.0.0:8000/docs
 3. http://0.0.0.0:8000/health
 4. http://0.0.0.0:8000/predict?q=this%20is%20great
+
+
+# References
+1. https://www.nltk.org
+1. https://www.nltk.org/nltk_data/
