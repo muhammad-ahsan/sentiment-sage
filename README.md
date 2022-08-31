@@ -1,6 +1,6 @@
-# Sample Model Template
+# Sentiment Server
 
-SampleModel is a REST API which encapsulates a machine learning model
+A machine learning model based on nltk. A dockerized REST Api which encapsulates a machine learning model and serve as standalone sentiment predictio model when given a sentence.
 
 # Build Docker
 
