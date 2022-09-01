@@ -31,7 +31,7 @@ jobs:
         with:
            username: ${{ secrets.DOCKERHUB_USERNAME }}
            password: ${{ secrets.DOCKERHUB_PASSWORD }}
-           repository: peterevans/dockerhub-description
+           repository: muhammad-ahsan/sentiment-server
       -
         name: Build and push
         uses: docker/build-push-action@v3
