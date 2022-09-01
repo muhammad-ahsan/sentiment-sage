@@ -1,6 +1,10 @@
 # Sentiment Server
 
-A machine learning model based on nltk. A dockerized REST Api which encapsulates a machine learning model and serve as standalone sentiment predictio model when given a sentence.
+
+1. A dockerized REST API which encapsulates a machine learning model 
+2. A machine learning model based on nltk.
+3. Serve as standalone sentiment prediction model 
+4. Given a sentence, the model provides a sentiment score based on positivity, negativity and neutrality
 
 # Build Docker
 
