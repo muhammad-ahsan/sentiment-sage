@@ -6,6 +6,18 @@
 3. Serve as standalone sentiment prediction model 
 4. Given a sentence, the model provides a sentiment score based on positivity, negativity and neutrality
 
+```mermaid
+sequenceDiagram
+    Web Server -> Model: 
+    loop Prediction Request with params
+        Web Server --> Model: Response containing predictions
+    end
+
+```
+
+      
+      
+
 # Build Docker
 
 docker build -t sample_model .
