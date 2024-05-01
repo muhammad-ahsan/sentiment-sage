@@ -4,12 +4,13 @@ from fastapi import FastAPI
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 app = FastAPI()
-model = SentimentIntensityAnalyzer(lexicon_file="nltk_data/vader_lexicon.zip/vader_lexicon/vader_lexicon.txt")
+model_path = "nltk_data/vader_lexicon.zip/vader_lexicon/vader_lexicon.txt"
+model = SentimentIntensityAnalyzer(lexicon_file=model_path)
 
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Welcome to sentiment-sage. Your mood reader ;)"}
 
 
 @app.get("/predict")
