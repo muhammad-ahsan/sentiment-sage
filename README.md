@@ -25,11 +25,11 @@ sequenceDiagram
 
 # Build Docker
 
-docker build -t sample_model .
+docker build -t sentiment-sage .
 
 # Run Docker
 
-docker run -p 8000:8000 sample_model
+docker run -p 8000:8000 sentiment-sage
 
 # API Interface
 
