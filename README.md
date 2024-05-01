@@ -1,10 +1,18 @@
-# Sentiment Server
+# Sentiment Sage
 
+## High-Level Description:
+Sentiment Sage is a REST API built using Docker, incorporating a machine learning model reliant on NLTK (Natural Language Toolkit). This API serves as a standalone sentiment prediction system. It analyzes input sentences and produces sentiment scores, considering positivity, negativity, and neutrality. The underlying sentiment classification strategy is rule-based, employing VADER (Valence Aware Dictionary and Sentiment Reasoner), which is adept at interpreting sentiments found in social media.
 
-1. A dockerized REST API which encapsulates a machine learning model 
-2. A machine learning model based on nltk.
-3. Serve as standalone sentiment prediction model 
-4. Given a sentence, the model provides a sentiment score based on positivity, negativity and neutrality
+## Features:
+
+- **Architecture**: The system is containerized using Docker for easy deployment and management.
+- **Machine Learning Model**: Built on NLTK, the model processes text input to predict sentiment.
+- **Functionality**: The API receives sentences as input and returns sentiment scores.
+- **Sentiment Scoring**: Each sentence is analyzed for positivity, negativity, and neutrality.
+- **Sentiment Classification**: VADER is utilized for sentiment classification.
+- **VADER**: VADER is a lexicon and rule-based sentiment analysis tool, specialized for social media sentiments.
+- **Rule-Based Strategy**: Sentiment classification is driven by predetermined rules within VADER.
+- **Output**: The API provides a comprehensive sentiment analysis report for each input sentence.
 
 ```mermaid
 sequenceDiagram
@@ -14,9 +22,6 @@ sequenceDiagram
     end
 
 ```
-
-      
-      
 
 # Build Docker
 
@@ -35,5 +40,6 @@ docker run -p 8000:8000 sample_model
 
 
 # References
-1. https://www.nltk.org
-1. https://www.nltk.org/nltk_data/
+- https://www.nltk.org
+- https://www.nltk.org/nltk_data/
+- https://github.com/cjhutto/vaderSentiment
