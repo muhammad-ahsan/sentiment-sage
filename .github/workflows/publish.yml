@@ -31,5 +31,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: mahsan/sentiment-server:latest
+          tags: mahsan/sentiment-sage:latest
           
